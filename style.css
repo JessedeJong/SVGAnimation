@@ -1,0 +1,25 @@
+body{
+    font-family: sans-serif;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28em, 1fr));
+    grid-gap: 2em;
+}
+
+.part_rectangle{
+    float: left;
+    background-color: red;
+}
+
+.part_rectangle{
+    stroke: black;
+    stroke-width: 5px;
+    fill: transparent;
+    stroke-dasharray: 900px;
+    stroke-dashoffset: 900px;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.part_rectangle:hover{
+    stroke-dashoffset: 0;
+}
